@@ -1,0 +1,5 @@
+#recentnews .container {
+	display: grid;
+	grid-template-columns: 7fr 5fr; 	
+}
+/* Почему-то не срабатывает grid. */
