@@ -1,0 +1,21 @@
+/* Шрифты */
+
+
+
+
+/* Структура */
+body {
+	margin: 0;
+}
+
+
+/* Атомарные классы */
+.container {
+	max-width: 1230px;
+	margin-inline: auto;
+	box-sizing: border-box;
+	width: 100%;
+}
+.field_area label {
+	display: block;
+}

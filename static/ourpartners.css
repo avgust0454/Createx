@@ -1,0 +1,4 @@
+#ourpartners .rowdescr {
+	display: grid;
+	grid-template-columns: 7fr 5fr;
+}

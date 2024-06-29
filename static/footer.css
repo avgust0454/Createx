@@ -1,0 +1,12 @@
+.col {
+	border: 1px solid blue;
+	padding: 5px;
+}
+
+/*  */
+
+footer .container {
+	display: grid;
+	grid-template-columns: 7fr 5fr;
+	gap: 30px;
+}

@@ -1,0 +1,7 @@
+#mission {
+	.know-form {
+		display: grid;
+		grid-template-columns: 3fr 3fr 6fr 2fr;
+		gap: 30px;
+	}
+}
