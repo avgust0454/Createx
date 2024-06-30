@@ -1,12 +1,12 @@
-#header2 .container {
+#header3 .container {
 	display: grid;
 	grid-template-columns: 7fr 5fr;
 	gap: 30px;
 }
-#header2 {
+#header3 {
 	background: url("images/header2/1.png");
 }
-#header2 .col.c2 {
+#header3 .col.c2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 10px;
