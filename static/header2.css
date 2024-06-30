@@ -1,0 +1,8 @@
+#header2 .container {
+	display: grid;
+	grid-template-columns: 7fr 5fr;
+	gap: 30px;
+}
+#header2 {
+	background: url("images/header2/1.png");
+}

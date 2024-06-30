@@ -1,4 +1,12 @@
 #recentnews .container {
 display: grid;
-grid-template-columns: 	
+grid-template-columns: 7fr 5fr;
+grid-template-rows: auto; 	
 }
+/*.bimg {
+	display: block;
+	width: 100%;
+}*/
+/* TODO3: почему фотки не встают
+ в своём порядке */
+

@@ -1,0 +1,15 @@
+/* #quickemail form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+} */
+ #quickemail form {
+ 	display: grid;
+ 	grid-template-columns: 5fr;
+ 	gap: 30px;
+ }
+ #quickemail {
+ 	background: url("images/quickemail/1.png");
+ }
