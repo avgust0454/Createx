@@ -107,38 +107,81 @@ body {
 
 /* БЭМ */
 
-#header .container {
+header .container {
     display: grid;
     grid-template-columns: 7fr 5fr;
     gap: 30px;
 }
-#header {
+header {
     background-color: #fff;
 }
-#header .col.c2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+header .col.c2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
-#header .col.c1 .menu {
+header .col.c1 .menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
-#header .col.c1 {
+header .col.c1 {
     display: grid;
     grid-template-columns: 1fr 5fr;
     gap: 20px;
 }
-#header .mennu {
+header .mennu {
+    text-decoration: none;
+    color: #424551;
+}
+header .bimg {
+    display: block;  
+    width: 100%;
+}
+
+header .button {
     text-decoration: none;
 }
-#header .button {
-    text-decoration: none;
-}
-#header .btnn {
+header .btnn {
     display: flex;
     gap: 15px;
+}
+/*header .bi.img {
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1000px; 
+} */
+
+header .wrap {
+    display: flex;
+    justify-content: center;
+}
+header .col.c3 {
+    background: url("images/header/bgr_image/1.png");
+    background-repeat: no-repeat;
+}
+header .phone, header .email {
+    display: block;
+    color: #424551;
+}
+header .phone_area {
+    display: block;
+}
+header .phone_area, header .email_area {
+    color: #1e212c;
+}
+/*header .email {
+    display: block;
+}*/
+header .email_area {
+    display: block;
+}
+header .button {
+/*    display: inline-block;*/
+    display: flex;
+}
+header .wrap.c1 {
+    display: inline-block;   
 }
 
 /* #about .container {
@@ -475,9 +518,7 @@ body {
         }
     }
 }
-/* #portfolio .inner {
-    text-align: center;
-} */
+
 #portfolio .container {
     display: grid;
     grid-template-columns: repeat(3, 4fr);
@@ -498,6 +539,15 @@ body {
         color: #1e212c;
         font-weight: bold;
         font-size: 1.5em;
+    }
+    .btn {
+        text-decoration: none;
+        background-color: #ff5a30;
+        padding: 15px 37px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 0.8em;
+        border-radius: 3px;
     } 
 }
  
@@ -517,7 +567,7 @@ body {
     font-size: 1.5em;
     padding-top: 3px; 
 } */
-#portfolio .btn {
+/* #portfolio .btn {
     text-decoration: none;
     background-color: #ff5a30;
     padding: 15px 37px;
@@ -525,8 +575,8 @@ body {
     font-weight: bold;
     font-size: 0.8em;
     border-radius: 3px;
-}
-#portfolio .item:hover .btn.c1 {
+} */
+ #portfolio .item:hover .btn.c1 {
     text-decoration: none;
     background-color: #fff;
     padding: 10px 37px;
@@ -536,7 +586,7 @@ body {
     border: 1px solid #ff5a30;
     border-radius: 3px;
     margin-top: 15px;
-}
+} 
 
 #partners .row_descr {
     display: grid;
@@ -644,6 +694,17 @@ body {
         &.c3 {
             grid-area: c;
         }
+        .dscr:hover {
+            color: #ff5a30;
+        }
+        .dscr {
+            color: #1e212c;
+            font-weight: bold;
+            font-size: 1em;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            text-indent: 20px;
+        }
         .links {
             display: flex;
             justify-content: flex-start;
@@ -651,7 +712,11 @@ body {
             .link {
                 text-decoration: none;
                 color: #71737d;
-            }    
+            } 
+            .link.c1, .link.c2 {
+                border-right: 1px solid #aaabaf;
+                padding-right: 10px;
+            }   
         }
     } 
 }
@@ -662,7 +727,22 @@ body {
     margin-top: 30px;
     background-color: #f9f9fa;
     padding-top: 50px;
-    padding-bottom: 50px;   
+    padding-bottom: 50px;
+    .explore {
+        color: #1e212c;
+        font-weight: bold;
+        font-size: 1.5em;
+        padding-top: 3px;
+    }
+    .btn {
+        text-decoration: none;
+        background-color: #ff5a30;
+        padding: 15px 37px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 0.8em;
+        border-radius: 3px;
+    }   
 }
 #recentnews .title_second {
     text-align: center;
@@ -671,7 +751,7 @@ body {
     margin-bottom: 15px;
     font-weight: bold;
 }
-#recentnews .btn {
+/* #recentnews .btn {
     text-decoration: none;
     background-color: #ff5a30;
     padding: 15px 37px;
@@ -679,23 +759,27 @@ body {
     font-weight: bold;
     font-size: 0.8em;
     border-radius: 3px;
-}
-#recentnews .explore {
+} */
+/* #recentnews .explore {
     color: #1e212c;
     font-weight: bold;
     font-size: 1.5em;
     padding-top: 3px;
-}
-#recentnews .links {
+} */
+/* #recentnews .links {
     display: flex;
     justify-content: flex-start;
     gap: 5px;
-}
-#recentnews .link.c1, #recentnews .link.c2{
+    .link.c1, .link.c2 {
+        border-right: 1px solid #aaabaf;
+        padding-right: 10px;
+    }
+} */
+/* #recentnews .link.c1, #recentnews .link.c2{
     border-right: 1px solid #aaabaf;
     padding-right: 10px;
-}
-#recentnews .dscr:hover {
+} */
+/* #recentnews .dscr:hover {
     color: #ff5a30;
 }
 #recentnews .dscr {
@@ -705,7 +789,7 @@ body {
     padding-bottom: 20px;
     padding-top: 20px;
     text-indent: 20px;
-}
+} */
 
 #contacts {
     background: url("images/quickemail/1.png");
@@ -787,9 +871,7 @@ footer .office_item {
     }
 }
 
-footer .col.c1 {
-    grid-column: 7 span;
-}
+
 
 footer .col.c2 {
     display: grid;
@@ -809,6 +891,36 @@ footer .col.c2 {
         font-size: 0.8em;
         font-weight: normal;
     }
+}
+footer {
+    & .col.c1 {
+        grid-column: 7 span;
+    }
+    & .col.c3 {
+        grid-column: 5 span;
+        .link {
+            padding-bottom: 20px;
+        }
+    }
+    & .col.c4 {
+        grid-column: 2 span;
+        .link {  
+            padding-bottom: 20px;
+        }
+    }
+    & .col.c5 {
+        grid-column: 5 span;
+        .link {  
+            padding-bottom: 20px;   
+        } 
+    }
+    & .col.c6 {
+        grid-column: 12 span;
+        color: #c7c7ca;
+    }
+}
+/* footer .col.c1 {
+    grid-column: 7 span;
 }
 footer .col.c3 {
     grid-column: 5 span;
@@ -831,7 +943,7 @@ footer .col.c5 {
 footer .col.c6 {
     grid-column: 12 span;
     color: #c7c7ca;
-}
+} */
 
 footer .socnet {
     display: flex;
