@@ -110,7 +110,12 @@ body {
 
 header {
     background-color: #fff;
+    .link {
+        text-decoration: none;
+        color: #1e212c;
+    }
 }
+
 
 header .row.c1 {
     display: flex;
@@ -186,13 +191,56 @@ header .col.c2 {
 header .col.c3 {
     background: url("images/header/bgr_image/1.png");
     background-repeat: no-repeat;
-    .wrap {
-        display: flex;
-        justify-content: center;
+    .descr {
+        color: #fff;
+        margin-bottom: 50px;
     }
-    .btnn {
+    .btnn_area {
         display: flex;
         gap: 15px;
+        margin-bottom: 50px;
+        .button.c1 {
+            border: 1px solid #fff;
+            padding: 15px 30px;
+            background-color: #676d74;
+            opacity: 100%;
+            border-radius: 4px;
+        }
+        .button.c2 {
+            border: 2px solid #ff5a30;
+            background-color: #ff5a30;
+            border-radius: 4px;
+            padding: 15px 40px;
+        }
+        .button {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+header .col.c3 {
+   /* width: 100%;
+    height: 100%; */
+    height: 900px;
+    background-size: cover;
+    background: url("images/header/bgr_image/1.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .wrap {
+        width: clamp(320px, 100%, 1230px);
+        margin-inline: auto;
+        box-sizing: border-box;
+        .title_area {
+            color: #fff;
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 50px;
+            .x {
+                color: #ff5a30;
+            }
+        }
     }
 }
 
@@ -390,32 +438,27 @@ header .col.c3 {
 
 #portfolio {
     background-color: #f3f4f4;
-    .wrap {
-        display: grid;
-        grid-template-columns: repeat(3, 4fr);
-        gap: 30px;
-        .item {         
-            position: relative;
-            .inner {
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: #fff;
-            }
-            .btn {
-                display: none;
-            }
-            &:hover .btn {
-                display: inline-block;
-            }
+    .item {         
+        position: relative;
+        .inner {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+        }
+        .btn {
+            display: none;
+        }
+        &:hover .btn {
+            display: inline-block;
         }
     }
 }
-
 #portfolio .container {
     display: grid;
     grid-template-columns: repeat(3, 4fr);
+    gap: 20px;
     .inner {
         text-align: center;
     }
@@ -444,7 +487,6 @@ header .col.c3 {
         border-radius: 3px;
     } 
 }
-
  #portfolio .item:hover .btn.c1 {
     text-decoration: none;
     background-color: #fff;
