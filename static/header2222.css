@@ -1,0 +1,200 @@
+
+header {
+    background: url("images/features/header2/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 975px;
+    height: 600px; */
+  /*  max-width: 1920px;
+    max-height: 900px;
+    width: 100%;
+    height: 100%; */
+/*  display: block; */
+   /* display: block;
+    width: 100%;*/
+/* Почему эти правила не работают и как сделать
+ background не фиксированного размера  */
+    height: 600px;
+    .link {
+        text-decoration: none;
+        color: #1e212c;
+    }
+}
+/*header {
+    max-width: 1920px;
+    width: 100%;
+}*/
+header .container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;  
+}
+header .container {
+    .links {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .link {
+            color: #585b66;
+        }
+    }
+    .contacts-area {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+header .title2 {
+    color: #1e212c;
+    font-size: 3em;
+    font-weight: 900;
+}
+header .descr {
+    color: #97989e;
+    font-size: 1em;
+}
+
+
+
+header .row.c1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .menu_area {
+        display: flex;
+        gap: 20px;
+        .menu {
+            text-decoration: none;
+            color: #424551;
+        }
+    }
+    .contacts_area {
+        display: flex;
+        gap: 10px;
+        .contact {
+            position: relative;
+            padding-left: 50px;
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                content: "";
+                width: 40px;
+                height: 40px;
+            } 
+            &.c1:before {
+                background-image: url("images/home_page/header/contacts/call.svg"); 
+            }
+            &.c2:before {
+                background-image: url("images/home_page/header/contacts/talk.svg");
+            }       
+        } 
+    }
+}
+#features {
+    background-color: #fff;
+}
+#features .row {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 25px;
+    margin-top: 60px;
+}
+#features .container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;  
+}
+#features .block {
+   padding-top: 100px;
+   padding-bottom: 100px;  
+}
+#features .title {
+   color: #1e212c;
+   font-size: 3em;
+   font-weight: bold;
+   padding-bottom: 30px;
+}
+#features .descr {
+   color: #898b90;
+   font-size: 1em;
+   padding-bottom: 30px;
+}
+#features .btn {
+    border: 1px solid #ff5a30;
+    padding: 10px 40px;
+    background-color: #fff;
+    margin-top: 50px;
+    text-decoration: none;
+    color: #ff5a30;
+    border-radius: 4px;
+}
+/*
+header .col.c3 {
+    background: url("images/header2/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 975px;
+    height: 600px;
+}
+*/
+/*
+header .col.c3 {
+    height: 900px;
+    background-size: cover;
+    background: url("images/header2/1.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .wrap {
+        width: clamp(320px, 100%, 1230px);
+        margin-inline: auto;
+        box-sizing: border-box;
+        .title_area {
+            color: #fff;
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 50px;
+         
+            .title2:after {
+                content: "x";
+                color: #ff5a30;
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+header .col.c3 {
+    background: url("images/header2/1.png");
+    background-repeat: no-repeat;
+    .descr {
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .btnn_area {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 50px;
+        .button.c1 {
+            border: 1px solid #fff;
+            padding: 15px 30px;
+            background-color: #676d74;
+            opacity: 100%;
+            border-radius: 4px;
+        }
+        .button.c2 {
+            border: 2px solid #ff5a30;
+            background-color: #ff5a30;
+            border-radius: 4px;
+            padding: 15px 40px;
+        }
+        .button {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+*/
