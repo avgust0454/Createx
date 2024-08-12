@@ -1,0 +1,363 @@
+/* Атомарные классы */
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;  
+}
+
+/*БЭМ*/
+header {
+    background: url("images/services/header2/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 975px;
+    height: 600px; */
+  /*  max-width: 1920px;
+    max-height: 900px;
+    width: 100%;
+    height: 100%; */
+/*  display: block; */
+   /* display: block;
+    width: 100%;*/
+/* Почему эти правила не работают и как сделать
+ background не фиксированного размера  */
+    height: 600px;
+    .link {
+        text-decoration: none;
+        color: #1e212c;
+    }
+}
+/*header {
+    max-width: 1920px;
+    width: 100%;
+}*/
+
+header .container {
+    .links {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .link {
+            color: #585b66;
+        }
+    }
+    .contacts-area {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+header .title2 {
+    color: #1e212c;
+    font-size: 3em;
+    font-weight: 900;
+}
+header .descr {
+    color: #97989e;
+    font-size: 1em;
+}
+
+
+
+header .row.c1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .menu_area {
+        display: flex;
+        gap: 20px;
+        .menu {
+            text-decoration: none;
+            color: #424551;
+        }
+    }
+    .contacts_area {
+        display: flex;
+        gap: 10px;
+        .contact {
+            position: relative;
+            padding-left: 50px;
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                content: "";
+                width: 40px;
+                height: 40px;
+            } 
+            &.c1:before {
+                background-image: url("images/services/header2/contacts/call.svg"); 
+            }
+            &.c2:before {
+                background-image: url("images/services/header2/contacts/talk.svg");
+            }       
+        } 
+    }
+}
+#features {
+    background-color: #fff;
+    .block {
+       padding-top: 100px;
+       padding-bottom: 100px;
+       .row {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            gap: 25px;
+            margin-top: 60px;
+            .title {
+               color: #1e212c;
+               font-size: 3em;
+               font-weight: bold;
+               padding-bottom: 30px;
+            }
+            .descr {
+               color: #898b90;
+               font-size: 1em;
+               padding-bottom: 30px;
+            }
+            .btn {
+                border: 1px solid #ff5a30;
+                padding: 10px 40px;
+                background-color: #fff;
+                margin-top: 50px;
+                text-decoration: none;
+                color: #ff5a30;
+                border-radius: 4px;
+            }   
+        }  
+    }
+}
+/* #features .row {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 25px;
+    margin-top: 60px;
+} */
+
+/* #features .block {
+   padding-top: 100px;
+   padding-bottom: 100px;  
+} */
+/* #features .title {
+   color: #1e212c;
+   font-size: 3em;
+   font-weight: bold;
+   padding-bottom: 30px;
+}
+#features .descr {
+   color: #898b90;
+   font-size: 1em;
+   padding-bottom: 30px;
+} */
+#features .btn {
+    border: 1px solid #ff5a30;
+    padding: 10px 40px;
+    background-color: #fff;
+    margin-top: 50px;
+    text-decoration: none;
+    color: #ff5a30;
+    border-radius: 4px;
+}
+
+#contacts {
+    background: url("images/services/quickemail/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        .contacts-form {
+            display: grid;
+            grid-template-columns: 5fr;
+            gap: 30px;
+            max-width: 495px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #fff;
+            padding: 30px 30px;
+            margin: 40px 0 50px;
+            .title {
+                font-weight: bold;
+                font-size: 1em;
+                color: #1e212c;
+                text-align: center;
+            }
+            .field_area.c1 {
+                text-align: center;
+            }
+            .field_area {
+                text-align: left;
+                .name, .phone, .email {
+                    background-color: #f4f5f6;
+                    color: #9a9ca5;
+                    width: 80%;
+                    padding: 10px 60px 10px 10px;
+                    border: 1px normal #d7dadd;
+                }
+                .message {
+                    background-color: #f4f5f6;
+                    color: #9a9ca5;
+                    padding: 15px 60px 15px 10px;
+                    border: 1px normal #d7dadd;
+                    width: 80%;
+                }
+                .checkbox {
+                    background-color: #ff5a30;
+                }
+                .button.c1 {
+                    background-color: #ff5a30;
+                    padding: 10px 20px;
+                    color: #fff;
+                    border: 1px normal #ff5a30;
+                    border-radius: 4px;
+                }
+            } 
+        }  
+    }
+}
+/* #contacts label {
+    text-align: left;
+    margin-left: 5px;
+} */
+
+footer {
+    background-color: #1e212c;
+    padding: 50px 100px;    
+}
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    .title {
+        color: #fff;
+        font-size: 1.3em;
+        padding-bottom: 20px;
+        font-weight: 600;   
+    }
+    .footer_title {
+        color: #fff;
+        font-weight: bold;
+        font-size: 0.8em;
+        padding-bottom: 20px;
+    }
+}
+footer {
+    .link.c1 {
+        background-image: url("images/services/footer/socnet/1.svg");
+    }
+    .link.c2 {
+        background-image: url("images/services/footer/socnet/2.svg");
+    }
+    .link.c3 {
+        background-image: url("images/services/footer/socnet/3.svg");
+    }
+    .link.c4 {
+        background-image: url("images/services/footer/socnet/4.svg");
+    }
+    .link.c5 {
+        background-image: url("images/services/footer/socnet/5.svg");
+    }
+    .link {
+        background-repeat: no-repeat;
+    }
+}
+footer .descr {
+    color: #a5a6ab;
+    font-size: 0.8em;
+    padding-top: 15px;
+}
+footer .link_area .link {
+    display: block;
+    color: rgba(255,255,255,.6);
+    text-decoration: none;
+}
+footer .office_item .link {
+    color: rgba(255,255,255,.6);
+    text-decoration: none;
+}
+footer .logo {
+    color: #fff;
+}
+footer .office_item {
+    display: flex;
+    gap: 15px;
+    .label {
+        color: #fff;
+    }
+}
+footer .col.c2 {
+    display: grid;
+    grid-column: 5 span;
+    .textarea {
+        padding: 10px 120px 10px 15px;
+        background-color: #393c46;
+        color: #a1a2a7;
+        border-radius: 3px;
+        border: 0.7px normal #61636b;
+    }
+    .btn {
+        background-color: #ff5a30;
+        padding: 9px 17px;
+        border: 2px solid #ff5a30;
+        color: #fff;
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+}
+footer {
+    & .col.c1 {
+        grid-column: 7 span;
+    }
+    & .col.c3 {
+        grid-column: 5 span;
+        .link {
+            padding-bottom: 20px;
+        }
+    }
+    & .col.c4 {
+        grid-column: 2 span;
+        .link {  
+            padding-bottom: 20px;
+        }
+    }
+    & .col.c5 {
+        grid-column: 5 span;
+        .link {  
+            padding-bottom: 20px;   
+        } 
+    }
+    & .col.c6 {
+        grid-column: 12 span;
+        color: #c7c7ca;
+    }
+}
+footer .socnet {
+    display: flex;
+    gap: 15px;
+    .link {
+        background-repeat: no-repeat;
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+}
+footer .logo_area {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 20px;
+    .logo {
+        width: clamp(35px, 100%, 142px);
+    }
+    .socnet {
+        display: flex;
+        gap: 15px;
+        .link {
+            background-repeat: no-repeat;
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

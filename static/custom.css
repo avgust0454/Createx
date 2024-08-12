@@ -146,21 +146,23 @@ header .row.c1 {
                 height: 40px;
             } 
             &.c1:before {
-                background-image: url("images/header/contacts/call.svg"); 
+                background-image: url("images/home_page/header/contacts/call.svg"); 
             }
             &.c2:before {
-                background-image: url("images/header/contacts/talk.svg");
+                background-image: url("images/home_page/header/contacts/talk.svg");
             }       
         } 
     }
 }
+/* header .col.c3 {
+     background-size: cover;
+} */
 header .col.c3 {
     height: 900px;
     background-size: cover;
-    background: url("images/header/bgr_image/1.png");
+    background: url("images/home_page/header/bgr_image/1.png");
     background-repeat: no-repeat;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     .wrap {
         width: clamp(320px, 100%, 1230px);
@@ -181,7 +183,7 @@ header .col.c3 {
     }
 }
 header .col.c3 {
-    background: url("images/header/bgr_image/1.png");
+    background: url("images/home_page/header/bgr_image/1.png");
     background-repeat: no-repeat;
     .descr {
         color: #fff;
@@ -370,7 +372,7 @@ header .col.c3 {
         }
     }
     .item.c1:hover {
-        background-image: url("images/services/1.png");
+        background-image: url("images/home_page/services/1.png");
     }
     .item .title6 {
         color: #1e212c;
@@ -644,8 +646,8 @@ header .col.c3 {
 }
 
 #contacts {
-    background: url("images/quickemail/1.png");
-
+    background: url("images/home_page/quickemail/1.png");
+    background-repeat: no-repeat;
     .container {
         display: flex;
         justify-content: flex-end;
@@ -665,12 +667,17 @@ header .col.c3 {
                 color: #1e212c;
                 text-align: center;
             }
-            .field_area {
+            .field_area.c1 {
                 text-align: center;
+            }
+            .field_area {
+                text-align: left;
                 .name, .phone, .email {
                     background-color: #f4f5f6;
                     color: #9a9ca5;
-                    width: 80%;
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
                     padding: 10px 60px 10px 10px;
                     border: 1px normal #d7dadd;
                 }
@@ -679,7 +686,9 @@ header .col.c3 {
                     color: #9a9ca5;
                     padding: 15px 60px 15px 10px;
                     border: 1px normal #d7dadd;
-                    width: 80%;
+                    width: 100%;
+                    display: block;
+                    box-sizing: border-box;
                 }
                 .checkbox {
                     background-color: #ff5a30;
@@ -694,10 +703,6 @@ header .col.c3 {
             } 
         }  
     }
-}
-#contacts label {
-    text-align: left;
-    margin-left: 5px;
 }
 
 footer {
@@ -723,19 +728,19 @@ footer .container {
 }
 footer {
     .link.c1 {
-        background-image: url("images/footer/socnet/1.svg");
+        background-image: url("images/home_page/footer/socnet/1.svg");
     }
     .link.c2 {
-        background-image: url("images/footer/socnet/2.svg");
+        background-image: url("images/home_page/footer/socnet/2.svg");
     }
     .link.c3 {
-        background-image: url("images/footer/socnet/3.svg");
+        background-image: url("images/home_page/footer/socnet/3.svg");
     }
     .link.c4 {
-        background-image: url("images/footer/socnet/4.svg");
+        background-image: url("images/home_page/footer/socnet/4.svg");
     }
     .link.c5 {
-        background-image: url("images/footer/socnet/5.svg");
+        background-image: url("images/home_page/footer/socnet/5.svg");
     }
     .link {
         background-repeat: no-repeat;
