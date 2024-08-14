@@ -4,12 +4,16 @@
     width: 100%;
     margin: 0 auto;  
 }
+body {
+    margin: 0;
+}
 
 /*БЭМ*/
 header {
     background: url("images/services/header2/1.png");
     background-size: cover;
     background-repeat: no-repeat;
+/*    margin: 0; */
     /* width: 975px;
     height: 600px; */
   /*  max-width: 1920px;
@@ -45,12 +49,12 @@ header .container {
         padding-bottom: 30px;
     }
 }
-header .title2 {
+header .col.c3 .title2 {
     color: #1e212c;
     font-size: 3em;
     font-weight: 900;
 }
-header .descr {
+header .col.c3 .descr {
     color: #97989e;
     font-size: 1em;
 }
@@ -192,7 +196,9 @@ header .row.c1 {
                 .name, .phone, .email {
                     background-color: #f4f5f6;
                     color: #9a9ca5;
-                    width: 80%;
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
                     padding: 10px 60px 10px 10px;
                     border: 1px normal #d7dadd;
                 }

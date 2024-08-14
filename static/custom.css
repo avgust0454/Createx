@@ -162,6 +162,7 @@ header .col.c3 {
     background-size: cover;
     background: url("images/home_page/header/bgr_image/1.png");
     background-repeat: no-repeat;
+    background-position: top center;
     display: flex;
     align-items: center;
     .wrap {
@@ -182,9 +183,13 @@ header .col.c3 {
         }
     }
 }
+/* TODO: 10 пересечение правил происходит при их повторении
+и от этого они могут сбивать вёрстку */
+/* Высота background для мобильных экранов
+ подгоняется адаптивностью */
 header .col.c3 {
-    background: url("images/home_page/header/bgr_image/1.png");
-    background-repeat: no-repeat;
+/* background: url("images/home_page/header/bgr_image/1.png");*/
+/*    background-repeat: no-repeat;*/
     .descr {
         color: #fff;
         margin-bottom: 50px;
@@ -541,16 +546,19 @@ header .col.c3 {
     }
 }
 #facts .wrap {
-    display: grid;
+   /* display: grid;
     grid-template-columns: repeat(4, 3fr);
-    grid-template-rows: auto;
-    gap: 5px; 
+    grid-template-rows: auto;*/
+    gap: 15px; 
     justify-content: center;
+    display: flex;
     .item {
-        position: relative;
+        .circle_area {
+            position: relative;
+        }
         .value {
             position: absolute;
-            top: 35%;
+            top: 50%;
             left: 50%; 
             transform: translate(-50%, -50%);
             font-size: 1.5em;

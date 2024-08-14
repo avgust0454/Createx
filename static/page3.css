@@ -1,0 +1,143 @@
+/* Атомарные классы */
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;  
+}
+body {
+    margin: 0;
+}
+
+/*БЭМ*/
+header {
+    background: url("images/page3/header3/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    margin: 0; */
+    /* width: 975px;
+    height: 600px; */
+  /*  max-width: 1920px;
+    max-height: 900px;
+    width: 100%;
+    height: 100%; */
+/*  display: block; */
+   /* display: block;
+    width: 100%;*/
+/* Почему эти правила не работают и как сделать
+ background не фиксированного размера  */
+    height: 600px;
+    .link {
+        text-decoration: none;
+        color: #1e212c;
+    }
+}
+
+header .container {
+    .links {
+        padding-bottom: 30px;
+        .link {
+            color: #585b66;
+        }
+    }
+    .contacts-area {
+        padding-bottom: 30px;
+    }
+}
+header .col.c3 .title2 {
+    color: #1e212c;
+    font-size: 3em;
+    font-weight: 900;
+}
+header .col.c3 .descr {
+    color: #97989e;
+    font-size: 1em;
+}
+
+
+header .row.c1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    .menu_area {
+        display: flex;
+        gap: 20px;
+        .menu {
+            text-decoration: none;
+            color: #424551;
+        }
+    }
+    .contacts_area {
+        display: flex;
+        gap: 10px;
+        .contact {
+            position: relative;
+            padding-left: 50px;
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                content: "";
+                width: 40px;
+                height: 40px;
+            } 
+            &.c1:before {
+                background-image: url("images/services/header2/contacts/call.svg"); 
+            }
+            &.c2:before {
+                background-image: url("images/services/header2/contacts/talk.svg");
+            }       
+        } 
+    }
+}
+
+#weoffer {
+    background-color: #fff;
+}
+#weoffer_3 .row.c1 {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+#weoffer_3 .row.c2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 50px;
+}
+#weoffer_3 .title_2 {
+   font-size: 3em;
+   color: #000;
+   font-weight: 900;
+}
+#weoffer_3 .name {
+padding-top: 20px;
+padding-bottom: 20px;
+font-weight: 800;
+color: #1e212c;
+}
+#weoffer_3 .descr {
+color: #9a9ba0;
+}
+#weoffer_3 .number.c3 {
+color: #ff5a30;
+font-size: 2.5em;
+font-weight: 800;
+}
+#weoffer_3 .number {
+color: #d7dadd;
+font-size: 2.5em;
+font-weight: 800;
+}
+#weoffer_3 .title_offer {
+   font-size: 3em;
+   color: #1e212c;
+   font-weight: 900;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
