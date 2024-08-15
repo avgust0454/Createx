@@ -101,7 +101,7 @@ header .row.c1 {
     display: grid;
     grid-template-columns: 7fr 5fr;
     padding-bottom: 50px;
-    gap: 20px;
+    gap: 60px;
 }
 #weoffer_3 .row.c2 {
     display: grid;
@@ -115,23 +115,56 @@ header .row.c1 {
    font-weight: 900;
 }
 #weoffer_3 .name {
-padding-top: 20px;
-padding-bottom: 20px;
-font-weight: 800;
-color: #1e212c;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 800;
+    color: #1e212c;
+    font-size: 1.5em;
+    position: relative;
+}
+#weoffer_3 .minus {
+    color: #ff5a30;
+    font-size: 2em;
+    padding-right: 5px;
+}
+#weoffer_3 .plus {
+    color: #ff5a30;
+    font-size: 2em;
+    padding-right: 5px;
+/*    line-height: 20px; */
+}
+#weoffer_3 .name.c1:before {
+    content: "-";
+    color: #ff5a30;
+    font-size: 1.2em;
+    line-height: 17px;
+    position: absolute;
+    left: -20px;
+    top: 20px; 
+/*    TODO: 11 Правильный ли синтаксис;*/
+}
+#weoffer_3 .name.c2:before {
+    content: "+";
+    color: #ff5a30;
+    font-size: 1.2em;
+    position: absolute;
+    left: -20px;
+    top: 17px; 
+    /* TODO: 11 Правильный ли синтаксис;*/
 }
 #weoffer_3 .descr {
-color: #9a9ba0;
+    color: #9a9ba0;
+    font-size: 1em;
 }
 #weoffer_3 .number.c3 {
-color: #ff5a30;
-font-size: 2.5em;
-font-weight: 800;
+    color: #ff5a30;
+    font-size: 2.5em;
+    font-weight: 800;
 }
 #weoffer_3 .number {
-color: #d7dadd;
-font-size: 2.5em;
-font-weight: 800;
+    color: #d7dadd;
+    font-size: 2.5em;
+    font-weight: 800;
 }
 #weoffer_3 .title_offer {
    font-size: 3em;
@@ -140,4 +173,19 @@ font-weight: 800;
    padding-top: 50px;
    padding-bottom: 50px;
 }
+#benefits .row {
+    display: flex;
+    gap: 30px;
+}
+#benefits {
+    background-color: #1e212c;
+}
+#benefits .name {
+    color: #fff;
+}
+#benefits .descr {
+    color:#94959b;
+}
+
+
 

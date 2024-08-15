@@ -58,8 +58,11 @@ header .col.c3 .descr {
     color: #97989e;
     font-size: 1em;
 }
-
-
+header .wrap {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto; 
+}
 
 header .row.c1 {
     display: flex;
@@ -100,6 +103,7 @@ header .row.c1 {
         } 
     }
 }
+
 #features {
     background-color: #fff;
     .block {
