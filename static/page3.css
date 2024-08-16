@@ -108,6 +108,7 @@ header .row.c1 {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 #weoffer_3 .title_2 {
    font-size: 3em;
@@ -122,17 +123,7 @@ header .row.c1 {
     font-size: 1.5em;
     position: relative;
 }
-#weoffer_3 .minus {
-    color: #ff5a30;
-    font-size: 2em;
-    padding-right: 5px;
-}
-#weoffer_3 .plus {
-    color: #ff5a30;
-    font-size: 2em;
-    padding-right: 5px;
-/*    line-height: 20px; */
-}
+
 #weoffer_3 .name.c1:before {
     content: "-";
     color: #ff5a30;
@@ -156,10 +147,8 @@ header .row.c1 {
     color: #9a9ba0;
     font-size: 1em;
 }
-#weoffer_3 .number.c3 {
+#weoffer_3 .number:hover {
     color: #ff5a30;
-    font-size: 2.5em;
-    font-weight: 800;
 }
 #weoffer_3 .number {
     color: #d7dadd;
@@ -174,18 +163,144 @@ header .row.c1 {
    padding-bottom: 50px;
 }
 #benefits .row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
     gap: 30px;
+    padding-top: 50px;
 }
 #benefits {
     background-color: #1e212c;
 }
+#benefits .container {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+#benefits .image {
+    padding-bottom: 25px;
+}
+#benefits .title_2 {
+    color:#fff;
+    font-size: 3em;
+    font-weight: 800;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
 #benefits .name {
     color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    padding-bottom: 15px;
 }
 #benefits .descr {
     color:#94959b;
 }
+#benefits .item.c2 {
+    border-left: 1px solid #686a72;
+    border-right: 1px solid #686a72;
+}
+#benefits .btn.c4 {
+    text-decoration: none;
+    background-color: #ff5a30;
+    padding: 15px 37px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 3px;
+    width: 15%;
+}
+#related_projects {
+    background-color: #f3f3f4;
+   /* opacity: 0.5;
+    filter: alpha(opacity=50);*/
+/*    TODO: 12 как сделать полупрозрачную цветовую растяжку*/
+}
+#related_projects .title_2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #1e212c;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+/* TODO: 12 Почему title_2 c item аходятся на разном уровне? */
+#related_projects .wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+}
+#related_projects .item {
+    text-align: center;
+    background-color: #fff;    
+}
+#related_projects .item .name{
+    color: #1e212c;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#related_projects .item .descr{
+    color: #9a9ba0;
+    font-size: 0.8em;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+#related_projects .item .btn.c2 {
+    display: none;
+}
+#related_projects .item:hover .btn.c2 {
+    display: inline-block;
+}
+#related_projects .item:hover .image {
+    width: 400px;
+    height: 280px;
+    object-fit: cover;
+}
+#related_projects .item .btn.c2 {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px 37px;
+    color: #ff5a30;
+    font-weight: 400;
+    font-size: 0.8em;
+    border-radius: 2px;
+    border: 1px solid #ff5a30;
+} 
+#related_projects .explnewpost {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    background-color: #f9f9fa;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .explore {
+        color: #1e212c;
+        font-weight: bold;
+        font-size: 1.5em;
+        padding-top: 3px;
+    } 
+    .btnc1 {
+        text-decoration: none;
+        background-color: #ff5a30;
+        padding: 15px 37px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 0.8em;
+        border-radius: 2px;
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
