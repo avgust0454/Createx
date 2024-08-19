@@ -7,6 +7,16 @@
 body {
     margin: 0;
 }
+.btn {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px 37px;
+    color: #ff5a30;
+    font-weight: 400;
+    font-size: 0.8em;
+    border-radius: 2px;
+    border: 1px solid #ff5a30;
+}
 
 /*БЭМ*/
 header {
@@ -123,7 +133,6 @@ header .row.c1 {
     font-size: 1.5em;
     position: relative;
 }
-
 #weoffer_3 .name.c1:before {
     content: "-";
     color: #ff5a30;
@@ -162,6 +171,7 @@ header .row.c1 {
    padding-top: 50px;
    padding-bottom: 50px;
 }
+
 #benefits .row {
     display: grid;
     grid-template-columns: repeat(3, 4fr);
@@ -175,6 +185,7 @@ header .row.c1 {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 70px;
+    position: relative;
 }
 #benefits .image {
     padding-bottom: 25px;
@@ -195,22 +206,39 @@ header .row.c1 {
 #benefits .descr {
     color:#94959b;
 }
-#benefits .item.c2 {
-    border-left: 1px solid #686a72;
-    border-right: 1px solid #686a72;
+/* #benefits .row {
+    position: relative;
+}*/ 
+#benefits .btnn.c4 {
+    position: relative;
 }
-#benefits .btn.c4 {
+#benefits .btnn.c4:after {
+    position: absolute;
+    top: 55px;
+    left: -70px;
+    content: "DISCUSS A PROJECT";
+    bottom: 0px;
+    transform: translate(0, 0);
     text-decoration: none;
     background-color: #ff5a30;
     padding: 15px 37px;
     color: #fff;
     font-weight: bold;
     font-size: 0.8em;
+    border: 1px solid #ff5a30;
     border-radius: 3px;
-    width: 15%;
+}  
+#benefits .row.c3 {
+      display: flex;
+      justify-content: center;
+} 
+#benefits .item.c2 {
+    border-left: 1px solid #686a72;
+    border-right: 1px solid #686a72;
 }
+
 #related_projects {
-    background-color: #f3f3f4;
+    background-color: #fff;
    /* opacity: 0.5;
     filter: alpha(opacity=50);*/
 /*    TODO: 12 как сделать полупрозрачную цветовую растяжку*/
@@ -230,7 +258,8 @@ header .row.c1 {
 }
 #related_projects .item {
     text-align: center;
-    background-color: #fff;    
+    background-color: #fff;
+    box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08),0 30px 24px -10px rgba(154, 156, 165, 0.05),0 12px 10px -6px rgba(154, 156, 165, 0.04),0 4px 4px -4px rgba(30, 33, 44, 0.03);
 }
 #related_projects .item .name{
     color: #1e212c;
@@ -244,6 +273,9 @@ header .row.c1 {
     font-size: 0.8em;
     font-weight: 400;
     padding-bottom: 30px;
+}
+#related_projects .item {
+ box-shadow: -1px 30px 94px -2px rgba(34, 60, 80, 0.2);
 }
 #related_projects .item .btn.c2 {
     display: none;
@@ -290,16 +322,45 @@ header .row.c1 {
         border-radius: 2px;
     }  
 }
+#pricing .table {
+    & .name_area {
+        text-align: center;
+    }
+    & .descr_area {
+        text-align: center;
+    }
+    & .true {
+        text-align: center;
+    }
+    & .length {
+        text-align: center;
+    }
+}
+#pricing .title_2, #pricing .descr {
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
+#pricing .table {
+    width: 100%;
+}
+#pricing .name_area.c1{
+    width: 40%;
+}
+#pricing .name_area.c2 {
+    width: 30%;
+}
+#pricing .name_area.c3 {
+    width: 15%;
+}
+#pricing .name_area.c4 {
+    width: 15%;
+}
+#pricing .vrg {
+    color: #ff5a30;
+}
+#pricing .buttonn {
+    text-align: center;
+}
 
 
 
