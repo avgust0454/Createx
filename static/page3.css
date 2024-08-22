@@ -1,40 +1,12 @@
-/* Атомарные классы */
-.container {
-    max-width: 1230px;
-    width: 100%;
-    margin: 0 auto;  
-}
-body {
-    margin: 0;
-}
-.btn {
-    text-decoration: none;
-    background-color: #fff;
-    padding: 15px 37px;
-    color: #ff5a30;
-    font-weight: 400;
-    font-size: 0.8em;
-    border-radius: 2px;
-    border: 1px solid #ff5a30;
-}
+
+
+
 
 /*БЭМ*/
-header {
+#header {
     background: url("images/page3/header3/1.png");
     background-size: cover;
     background-repeat: no-repeat;
-/*    margin: 0; */
-    /* width: 975px;
-    height: 600px; */
-  /*  max-width: 1920px;
-    max-height: 900px;
-    width: 100%;
-    height: 100%; */
-/*  display: block; */
-   /* display: block;
-    width: 100%;*/
-/* Почему эти правила не работают и как сделать
- background не фиксированного размера  */
     height: 600px;
     .link {
         text-decoration: none;
@@ -42,7 +14,7 @@ header {
     }
 }
 
-header .container {
+#header .container {
     .links {
         padding-bottom: 30px;
         .link {
@@ -53,18 +25,18 @@ header .container {
         padding-bottom: 30px;
     }
 }
-header .col.c3 .title2 {
+#header .col.c3 .title2 {
     color: #1e212c;
     font-size: 3em;
     font-weight: 900;
 }
-header .col.c3 .descr {
+#header .col.c3 .descr {
     color: #97989e;
     font-size: 1em;
 }
 
 
-header .row.c1 {
+#header .row.c1 {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -104,28 +76,77 @@ header .row.c1 {
     }
 }
 
-#weoffer {
+#weoffer_3 {
     background-color: #fff;
+    .row.c1 {
+        display: grid;
+        grid-template-columns: 7fr 5fr;
+        padding-bottom: 50px;
+        gap: 60px;
+        .name {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: 800;
+            color: #1e212c;
+            font-size: 1.5em;
+            position: relative;
+        }
+        .name.c1:before {
+            content: "-";
+            color: #ff5a30;
+            font-size: 1.2em;
+            line-height: 17px;
+            position: absolute;
+            left: -20px;
+            top: 20px; 
+/*            TODO: 11 Правильный ли синтаксис;*/
+        }
+        .name.c2:before {
+            content: "+";
+            color: #ff5a30;
+            font-size: 1.2em;
+            position: absolute;
+            left: -20px;
+            top: 17px; 
+/*             TODO: 11 Правильный ли синтаксис;*/
+        } 
+    }
 }
-#weoffer_3 .row.c1 {
+/* #weoffer_3 .row.c1 {
     display: grid;
     grid-template-columns: 7fr 5fr;
     padding-bottom: 50px;
     gap: 60px;
-}
+} */
 #weoffer_3 .row.c2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 3fr);
     gap: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
+    .descr {
+        color: #9a9ba0;
+        font-size: 1em;
+    }
+    .number:hover {
+        color: #ff5a30;
+    }
+    .number {
+        color: #d7dadd;
+        font-size: 2.5em;
+        font-weight: 800;
+    }
 }
-#weoffer_3 .title_2 {
+#weoffer_3 .descr {
+    color: #9a9ba0;
+    font-size: 1em;
+}
+/* #weoffer_3 .title_2 {
    font-size: 3em;
    color: #000;
    font-weight: 900;
-}
-#weoffer_3 .name {
+} */
+ #weoffer_3 .name {
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: 800;
@@ -134,25 +155,25 @@ header .row.c1 {
     position: relative;
 }
 #weoffer_3 .name.c1:before {
-    content: "-";
+  /*  content: "-";
     color: #ff5a30;
     font-size: 1.2em;
     line-height: 17px;
     position: absolute;
     left: -20px;
-    top: 20px; 
+    top: 20px;*/ 
 /*    TODO: 11 Правильный ли синтаксис;*/
 }
 #weoffer_3 .name.c2:before {
-    content: "+";
+  /*  content: "+";
     color: #ff5a30;
     font-size: 1.2em;
     position: absolute;
     left: -20px;
-    top: 17px; 
-    /* TODO: 11 Правильный ли синтаксис;*/
-}
-#weoffer_3 .descr {
+    top: 17px; */
+/*    TODO: 11 Правильный ли синтаксис;*/
+} 
+/* #weoffer_3 .descr {
     color: #9a9ba0;
     font-size: 1em;
 }
@@ -163,147 +184,98 @@ header .row.c1 {
     color: #d7dadd;
     font-size: 2.5em;
     font-weight: 800;
-}
-#weoffer_3 .title_offer {
-   font-size: 3em;
-   color: #1e212c;
-   font-weight: 900;
-   padding-top: 50px;
-   padding-bottom: 50px;
-}
+} */
 
-#benefits .row {
-    display: grid;
-    grid-template-columns: repeat(3, 4fr);
-    gap: 30px;
-    padding-top: 50px;
-}
 #benefits {
     background-color: #1e212c;
+    position: relative;
+    & .row {
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        gap: 30px;
+        padding-top: 50px;
+        .image {
+            padding-bottom: 25px;
+        }
+        .name {
+            color: var(--footerwhite1);
+            font-size: 1em;
+            font-weight: 700;
+            padding-bottom: 15px;
+        }
+        .descr {
+            color: #94959b;
+        }
+    }
 }
 #benefits .container {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 70px;
     position: relative;
+    .descr {
+        color: #94959b;
+    }
+    .btn.s5 {
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%, 50%); 
+        left: 50%;
+    }
 }
-#benefits .image {
+/* #benefits .image {
     padding-bottom: 25px;
 }
-#benefits .title_2 {
-    color:#fff;
-    font-size: 3em;
-    font-weight: 800;
-    padding-top: 20px;
-    padding-bottom: 35px;
-}
 #benefits .name {
-    color: #fff;
+    color: var(--footerwhite1);
     font-size: 1em;
     font-weight: 700;
     padding-bottom: 15px;
 }
 #benefits .descr {
     color:#94959b;
-}
-/* #benefits .row {
-    position: relative;
-}*/ 
-#benefits .btnn.c4 {
-    position: relative;
-}
-#benefits .btnn.c4:after {
-    position: absolute;
-    top: 55px;
-    left: -70px;
-    content: "DISCUSS A PROJECT";
-    bottom: 0px;
-    transform: translate(0, 0);
-    text-decoration: none;
-    background-color: #ff5a30;
-    padding: 15px 37px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 0.8em;
-    border: 1px solid #ff5a30;
-    border-radius: 3px;
-}  
-#benefits .row.c3 {
-      display: flex;
-      justify-content: center;
-} 
+} */ 
 #benefits .item.c2 {
     border-left: 1px solid #686a72;
     border-right: 1px solid #686a72;
 }
+/* #benefits .btn.s5 {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 50%); 
+    left: 50%;
+} */
 
 #related_projects {
     background-color: #fff;
-   /* opacity: 0.5;
-    filter: alpha(opacity=50);*/
-/*    TODO: 12 как сделать полупрозрачную цветовую растяжку*/
+    padding-bottom: 100px;
+    padding-top: 180px;
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        .item {
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08),0 30px 24px -10px rgba(154, 156, 165, 0.05),0 12px 10px -6px rgba(154, 156, 165, 0.04),0 4px 4px -4px rgba(30, 33, 44, 0.03);
+            .inner {
+                padding: 15px;
+                .btn {
+                    display: none;
+                }
+            }
+            &:hover .btn {
+                display: inline-block;
+                margin-top: 50px;
+            }
+        }
+    }
 }
-#related_projects .title_2 {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #1e212c;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  padding-left: 10px;
-}
-/* TODO: 12 Почему title_2 c item аходятся на разном уровне? */
-#related_projects .wrap {
-    display: grid;
-    grid-template-columns: repeat(3, 4fr);
-}
-#related_projects .item {
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08),0 30px 24px -10px rgba(154, 156, 165, 0.05),0 12px 10px -6px rgba(154, 156, 165, 0.04),0 4px 4px -4px rgba(30, 33, 44, 0.03);
-}
-#related_projects .item .name{
-    color: #1e212c;
-    font-size: 1em;
-    font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-#related_projects .item .descr{
-    color: #9a9ba0;
-    font-size: 0.8em;
-    font-weight: 400;
-    padding-bottom: 30px;
-}
-#related_projects .item {
- box-shadow: -1px 30px 94px -2px rgba(34, 60, 80, 0.2);
-}
-#related_projects .item .btn.c2 {
-    display: none;
-}
-#related_projects .item:hover .btn.c2 {
-    display: inline-block;
-}
-#related_projects .item:hover .image {
-    width: 400px;
-    height: 280px;
-    object-fit: cover;
-}
-#related_projects .item .btn.c2 {
-    text-decoration: none;
-    background-color: #fff;
-    padding: 15px 37px;
-    color: #ff5a30;
-    font-weight: 400;
-    font-size: 0.8em;
-    border-radius: 2px;
-    border: 1px solid #ff5a30;
-} 
 #related_projects .explnewpost {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 30px;
-    background-color: #f9f9fa;
     padding-top: 50px;
     padding-bottom: 50px;
     .explore {
@@ -312,16 +284,17 @@ header .row.c1 {
         font-size: 1.5em;
         padding-top: 3px;
     } 
-    .btnc1 {
+    .btn.invert {
         text-decoration: none;
-        background-color: #ff5a30;
+        background-color: var(--orangenum);
         padding: 15px 37px;
-        color: #fff;
+        color: var(--footerwhite1);
         font-weight: bold;
         font-size: 0.8em;
         border-radius: 2px;
     }  
 }
+
 #pricing .table {
     & .name_area {
         text-align: center;
@@ -336,31 +309,64 @@ header .row.c1 {
         text-align: center;
     }
 }
-#pricing .title_2, #pricing .descr {
+#pricing .title.s2, #pricing .descr {
     text-align: center;
 }
 
 #pricing .table {
     width: 100%;
 }
-#pricing .name_area.c1{
+#pricing .name_area {
+    color: var(--graydark);
+    font-weight: 800;
+    font-size: 1.5em;
+    &.c1 {
     width: 40%;
+    }
+    &.c2 {
+        width: 30%;
+    }
+    &.c3 {
+        width: 15%;
+    }
+    &.c4 {
+        width: 15%;
+    }
 }
-#pricing .name_area.c2 {
-    width: 30%;
+#pricing .descr_area{
+    color: var(--gray3);
+    font-weight: 400;
+    font-size: 1.3em;
 }
-#pricing .name_area.c3 {
-    width: 15%;
+#pricing .descr {
+    color: var(--gray3);
+    font-weight: 400;
+    font-size: 1.3em;
 }
-#pricing .name_area.c4 {
-    width: 15%;
+#pricing .name {
+    color: #424551;
+    font-weight: 400;
+    font-size: 1.4em;
+    &.s1 {
+        color:  var(--graydark);
+        font-weight: 800;
+        font-size: 1.3em;
+    }
 }
 #pricing .vrg {
-    color: #ff5a30;
+    color: var(--orangenum);
 }
 #pricing .buttonn {
     text-align: center;
 }
+#pricing .row.c3, 
+#pricing .row.c5, 
+#pricing .row.c7,
+#pricing .row.c9,
+#pricing .row.c11 {
+   background-color: #f4f5f6;
+}
+
 
 
 

@@ -4,39 +4,23 @@
     width: 100%;
     margin: 0 auto;  
 }
-body {
+/*body {
     margin: 0;
-}
+}*/
 
 /*БЭМ*/
-header {
+#header {
     background: url("images/services/header2/1.png");
     background-size: cover;
     background-repeat: no-repeat;
-/*    margin: 0; */
-    /* width: 975px;
-    height: 600px; */
-  /*  max-width: 1920px;
-    max-height: 900px;
-    width: 100%;
-    height: 100%; */
-/*  display: block; */
-   /* display: block;
-    width: 100%;*/
-/* Почему эти правила не работают и как сделать
- background не фиксированного размера  */
     height: 600px;
     .link {
         text-decoration: none;
         color: #1e212c;
     }
 }
-/*header {
-    max-width: 1920px;
-    width: 100%;
-}*/
 
-header .container {
+#header .container {
     .links {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -49,22 +33,22 @@ header .container {
         padding-bottom: 30px;
     }
 }
-header .col.c3 .title2 {
+#header .col.c3 .title2 {
     color: #1e212c;
     font-size: 3em;
     font-weight: 900;
 }
-header .col.c3 .descr {
+#header .col.c3 .descr {
     color: #97989e;
     font-size: 1em;
 }
-header .wrap {
+#header .wrap {
     max-width: 1230px;
     width: 100%;
     margin: 0 auto; 
 }
 
-header .row.c1 {
+#header .row.c1 {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -104,7 +88,7 @@ header .row.c1 {
     }
 }
 
-#features {
+#features_2 {
     background-color: #fff;
     .block {
        padding-top: 100px;
@@ -126,40 +110,18 @@ header .row.c1 {
                padding-bottom: 30px;
             }
             .btn {
-                border: 1px solid #ff5a30;
+               /* border: 1px solid #ff5a30;
                 padding: 10px 40px;
                 background-color: #fff;
                 margin-top: 50px;
                 text-decoration: none;
                 color: #ff5a30;
-                border-radius: 4px;
+                border-radius: 4px; */
             }   
         }  
     }
 }
-/* #features .row {
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-    gap: 25px;
-    margin-top: 60px;
-} */
-
-/* #features .block {
-   padding-top: 100px;
-   padding-bottom: 100px;  
-} */
-/* #features .title {
-   color: #1e212c;
-   font-size: 3em;
-   font-weight: bold;
-   padding-bottom: 30px;
-}
-#features .descr {
-   color: #898b90;
-   font-size: 1em;
-   padding-bottom: 30px;
-} */
-#features .btn {
+/*#features_2 .btn {
     border: 1px solid #ff5a30;
     padding: 10px 40px;
     background-color: #fff;
@@ -167,9 +129,9 @@ header .row.c1 {
     text-decoration: none;
     color: #ff5a30;
     border-radius: 4px;
-}
+}*/
 
-#contacts {
+#contacts_2 {
     background: url("images/services/quickemail/1.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -216,21 +178,17 @@ header .row.c1 {
                 .checkbox {
                     background-color: #ff5a30;
                 }
-                .button.c1 {
+               /* .button.c1 {
                     background-color: #ff5a30;
                     padding: 10px 20px;
                     color: #fff;
                     border: 1px normal #ff5a30;
                     border-radius: 4px;
-                }
+                }*/
             } 
         }  
     }
 }
-/* #contacts label {
-    text-align: left;
-    margin-left: 5px;
-} */
 
 footer {
     background-color: #1e212c;
@@ -307,14 +265,14 @@ footer .col.c2 {
         border-radius: 3px;
         border: 0.7px normal #61636b;
     }
-    .btn {
+  /*  .btn {
         background-color: #ff5a30;
         padding: 9px 17px;
         border: 2px solid #ff5a30;
         color: #fff;
         font-size: 0.8em;
         font-weight: normal;
-    }
+    }*/
 }
 footer {
     & .col.c1 {

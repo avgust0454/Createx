@@ -92,7 +92,7 @@ body {
 }
 
 
-
+/* Атомарные классы */
 .container {
 	width: clamp(320px, 100%, 1230px); 
 	margin-inline: auto; 
@@ -105,9 +105,96 @@ body {
     display: block;  
     width: 100%;
 }
+h2.title {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #1e212c;
+    margin: 0 0 15px;
+    &.s1 {
+        color: #fff;
+    }
+    &.s2 {
+        text-align: center;
+    }
+    &.s3 {
+        text-align: center;
+        color: #fff;
+    }    
+}
+.btn {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px 37px;
+    color: #ff5a30;
+    font-weight: 400;
+    font-size: 0.8em;
+    border-radius: 3px;
+    border: 1px solid #ff5a30;
+    display: inline-block;
+    &.invert {
+        color: #fff;
+        background-color: var(--orangenum);
+    }
+    &.s3 {
+        background-color: #ff5a30;
+        color: #fff;
+        padding: 15px 30px;
+        border: 1px solid #ff5a30;
+        display: inline-block;
+    }
+    &.s4 {
+        padding: 15px 25px;
+        background-color: #ff5a30;
+        color: #fff;
+        border: 1px solid #ff5a30;
+        display: inline-block;
+    }
+    &.s5 {
+        padding: 15px 50px;
+        background-color: #ff5a30;
+        color: #fff;
+        border: 1px solid #ff5a30;
+        display: inline-block;
+    }
+}
+/*.btn.s3 {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5a30;
+    color: #fff;
+    padding: 15px 30px;
+    font-weight: 400;
+    font-size: 0.8em;
+    border-radius: 2px;
+    border: 1px solid #ff5a30;
+    display: inline-block;
+}
+.btn.s4 {
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: #ff5a30;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.8em;
+    border-radius: 2px;
+    border: 1px solid #ff5a30;
+    display: inline-block;
+}
+.btn.s5 {
+    text-decoration: none;
+    padding: 15px 50px;
+    background-color: #ff5a30;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.8em;
+    border-radius: 2px;
+    border: 1px solid #ff5a30;
+    display: inline-block;
+}*/
 
 
 
+/* Каскадный БЭМ */
 header {
     background-color: #fff;
     .link {
@@ -204,12 +291,6 @@ header .col.c3 {
             background-color: #676d74;
             opacity: 100%;
             border-radius: 4px;
-        }
-        .button.c2 {
-            border: 2px solid #ff5a30;
-            background-color: #ff5a30;
-            border-radius: 4px;
-            padding: 15px 40px;
         }
         .button {
             text-decoration: none;
@@ -325,16 +406,8 @@ header .col.c3 {
             border: 0.5px normal #212121;
             box-sizing: border-box;
         }
-        .btnnn {
-            background-color: var(--colorOrange);
-            border-color: 1px solid var(--colorOrange);
-            padding-right: 50px;
-            padding-left: 50px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            color: #fff;
-            text-decoration: none;
-            margin-top: 20px;
+        .btn.s3 {
+            margin-top: 25px;
         }
     }
 }
@@ -402,7 +475,7 @@ header .col.c3 {
         font-size: 1.5em;
         padding-top: 3px;
     } 
-    .btn {
+  /*  .btn {
         text-decoration: none;
         background-color: #ff5a30;
         padding: 15px 37px;
@@ -410,7 +483,7 @@ header .col.c3 {
         font-weight: bold;
         font-size: 0.8em;
         border-radius: 2px;
-    }  
+    }*/  
 }
 
 #portfolio {
@@ -424,15 +497,15 @@ header .col.c3 {
             bottom: 0;
             background-color: #fff;
         }
-        .btn {
+        .btn.invert {
             display: none;
         }
-        &:hover .btn {
+        &:hover .btn.invert {
             display: inline-block;
         }
     }
 }
-#portfolio .container {
+#portfolio .wrap_1 {
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     gap: 20px;
@@ -454,7 +527,7 @@ header .col.c3 {
         font-weight: bold;
         font-size: 1.5em;
     }
-    .btn {
+   /* .btn.invert {
         text-decoration: none;
         background-color: #ff5a30;
         padding: 15px 37px;
@@ -462,9 +535,9 @@ header .col.c3 {
         font-weight: bold;
         font-size: 0.8em;
         border-radius: 3px;
-    } 
+    }*/ 
 }
-#portfolio .item:hover .btn.c1 {
+#portfolio .item:hover .btn {
     text-decoration: none;
     background-color: #fff;
     padding: 10px 37px;
@@ -635,7 +708,7 @@ header .col.c3 {
         font-size: 1.5em;
         padding-top: 3px;
     }
-    .btn {
+   /* .btn {
         text-decoration: none;
         background-color: #ff5a30;
         padding: 15px 37px;
@@ -643,7 +716,7 @@ header .col.c3 {
         font-weight: bold;
         font-size: 0.8em;
         border-radius: 3px;
-    }   
+    } */  
 }
 #recentnews .title_second {
     text-align: center;
@@ -701,13 +774,13 @@ header .col.c3 {
                 .checkbox {
                     background-color: #ff5a30;
                 }
-                .button.c1 {
+               /* .button.c1 {
                     background-color: #ff5a30;
                     padding: 10px 20px;
                     color: #fff;
                     border: 1px normal #ff5a30;
                     border-radius: 4px;
-                }
+                }*/
             } 
         }  
     }
@@ -788,14 +861,14 @@ footer .col.c2 {
         border-radius: 3px;
         border: 0.7px normal #61636b;
     }
-    .btn {
+   /* .btn {
         background-color: #ff5a30;
         padding: 9px 17px;
         border: 2px solid #ff5a30;
         color: #fff;
         font-size: 0.8em;
         font-weight: normal;
-    }
+    } */
 }
 footer {
     & .col.c1 {
