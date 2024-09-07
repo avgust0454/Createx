@@ -86,13 +86,11 @@
 серый цвет под словами basic и price*/
 
 /* Структура */
-body {
-	margin: 0;
-	font-family: Ubuntu, Helvetica, Arial;
-}
-
 
 /* Атомарные классы */
+body {
+    margin: 0;
+}
 .container {
 	width: clamp(320px, 100%, 1230px); 
 	margin-inline: auto; 
@@ -105,6 +103,13 @@ body {
     display: block;  
     width: 100%;
 }
+h1.title1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #1e212c;
+    margin: 0 0 15px;
+}
+
 h2.title {
     font-size: 2.5em;
     font-weight: 900;
@@ -119,8 +124,14 @@ h2.title {
     &.s3 {
         text-align: center;
         color: #fff;
-    }    
+    }
+    &.s4 {
+        text-align: left;
+        color: #1e212c;
+        font-size: 1em;
+    }     
 }
+
 .btn {
     text-decoration: none;
     background-color: #fff;
@@ -135,26 +146,22 @@ h2.title {
         color: #fff;
         background-color: var(--orangenum);
     }
+    &.s2 {
+        color: #fff;
+        padding: 15px 40px;
+    }
     &.s3 {
-        background-color: #ff5a30;
         color: #fff;
         padding: 15px 30px;
-        border: 1px solid #ff5a30;
-        display: inline-block;
+        background-color: #ff5a30;
     }
     &.s4 {
         padding: 15px 25px;
-        background-color: #ff5a30;
         color: #fff;
-        border: 1px solid #ff5a30;
-        display: inline-block;
     }
     &.s5 {
         padding: 15px 50px;
-        background-color: #ff5a30;
         color: #fff;
-        border: 1px solid #ff5a30;
-        display: inline-block;
     }
 }
 /*.btn.s3 {
@@ -244,7 +251,7 @@ header .row.c1 {
 /* header .col.c3 {
      background-size: cover;
 } */
-header .col.c3 {
+.header_1 .col.c3 {
     height: 900px;
     background-size: cover;
     background: url("images/home_page/header/bgr_image/1.png");
@@ -275,8 +282,7 @@ header .col.c3 {
 /* Высота background для мобильных экранов
  подгоняется адаптивностью */
 header .col.c3 {
-/* background: url("images/home_page/header/bgr_image/1.png");*/
-/*    background-repeat: no-repeat;*/
+    background-size: cover;
     .descr {
         color: #fff;
         margin-bottom: 50px;
@@ -381,7 +387,7 @@ header .col.c3 {
     }
     .knowform {
         display: grid;
-        grid-template-columns: 1fr 1fr 2fr 1fr;
+        grid-template-columns: 2fr 2fr 4fr 1fr;
         gap: 20px;
         .name {
             padding: 20px 30px;
@@ -406,7 +412,7 @@ header .col.c3 {
             border: 0.5px normal #212121;
             box-sizing: border-box;
         }
-        .btn.s3 {
+        .btn.s2 {
             margin-top: 25px;
         }
     }
@@ -560,7 +566,7 @@ header .col.c3 {
     padding-top: 20px;
     padding-bottom: 20px;
     line-height: 30px;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 #partners {
     background-color: #f4f5f6;
@@ -582,6 +588,7 @@ header .col.c3 {
             grid-template-columns: 7fr 5fr;
             text-align: left;
             padding-top: 100px;
+            padding-bottom: 100px;
             .third_title {
                 font-size: 2.5em;
                 margin: 0 0 15px;
@@ -729,6 +736,9 @@ header .col.c3 {
 #contacts {
     background: url("images/home_page/quickemail/1.png");
     background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-position: top center;
+    background-size: cover;
     .container {
         display: flex;
         justify-content: flex-end;

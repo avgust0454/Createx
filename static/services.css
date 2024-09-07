@@ -53,8 +53,8 @@
     justify-content: space-between;
     gap: 30px;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     .menu_area {
         display: flex;
         gap: 20px;
@@ -121,7 +121,7 @@
         }  
     }
 }
-/*#features_2 .btn {
+/* #features_2 .btn {
     border: 1px solid #ff5a30;
     padding: 10px 40px;
     background-color: #fff;
@@ -129,7 +129,7 @@
     text-decoration: none;
     color: #ff5a30;
     border-radius: 4px;
-}*/
+} */
 
 #contacts_2 {
     background: url("images/services/quickemail/1.png");
