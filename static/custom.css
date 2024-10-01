@@ -65,7 +65,7 @@
 --graydark: #1e212c;
 /*  Тёмно-серый цвет на второй странице. скорее всего заголовки
 абзацыев */
---grayLite2: #f4f5f6;
+--grayLite23: #f4f5f6;
 /*  Светло-серый цвет на второй странице 
 там фото на вс.сл. */
 /* --headergrayLite2:  #f4f5f6; */
@@ -202,14 +202,14 @@ h2.title {
 
 
 /* Каскадный БЭМ */
-header {
+.header_1 {
     background-color: #fff;
     .link {
         text-decoration: none;
         color: #1e212c;
     }
 }
-header .row.c1 {
+.header_1 .row.c1 {
     display: flex;
     justify-content: space-between;
     gap: 30px;

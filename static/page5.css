@@ -1,5 +1,6 @@
 header {
     background-color: #fff;
+    z-index: 1;
     .link {
         text-decoration: none;
         color: #1e212c;
@@ -11,6 +12,7 @@ header {
     background: url("images/page_5/header_5/1.png");
     background-repeat: no-repeat;
     background-position: top center;
+    margin-bottom: 50px;
     .col.c3 {
         display: flex;
         align-items: center;
@@ -99,10 +101,91 @@ header .wrap_2 {
 }
 header .wrap_1 {
     & .title_area {
-            padding-bottom: 40px;
-            padding-top: 30px;
+        padding-bottom: 40px;
+        .link {
+            padding-bottom: 30px;
+        }
     }
+
 }
 header .wrap_2 .col.c2 {
     box-shadow: -1px 5px 8px 0px rgba(34, 60, 80, 0.2);
 }
+
+#construct_decision {
+  position: relative;
+  z-index: 20;
+}
+#construct_decision .wrap {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: unset;
+    .descr:before {
+        background-image: url("static/images/page_5/constructive_decision/1.svg");
+        width: 20px;
+        height: 20px;
+    }
+}
+#simil_projects .wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    .item {
+        text-align: center;
+        .name {
+            color: var(--graydark);
+            font-size: 1.5em;
+        }
+        .descr {
+            color: var(--grayLite2);
+            font-size: 1em;
+        }
+    }
+}
+
+#simil_projects .container {
+    & .title {
+        padding-left: 10px;
+    }
+}
+
+#simil_projects .links_area {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -40px;
+    left: 0;
+    .btn_s3:active {
+        background-color: #ff5a30;
+        width: 40px;
+        height: 40px;
+        border-radius: 50% 50% 50%;
+    }
+     .btn_s3 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50% 50% 50%;   
+    }
+
+}
+
+
+
+
+#simil_projects .explnewpost {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    background-color: #f9f9fa;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    .explore {
+        color: #1e212c;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
