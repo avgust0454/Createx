@@ -216,10 +216,10 @@ header .col.c3 .descrs {
 }
 #develop_history {
    background-color: #f4f5f6;
-}
-#develop_history .title_area {
-    display: flex;
-    justify-content: flex-start;
+   #develop_history .title_area {
+        display: flex;
+        justify-content: flex-start;
+    }
 }
 #develop_history .links_area {
     display: flex;
@@ -239,22 +239,16 @@ header .col.c3 .descrs {
         border-radius: 50% 50% 50%;   
     }
 }
-
-/* #develop_history ul  {
-    list-style-image: url("images/page_6/our_history/2.svg");
-    margin: 7px 0;
-    height: 10%;
-} */
-#develop_history ul {
+#develop_history .wrap .markers {
     list-style: none;
     position: relative;
     text-align: left;
-}
-#develop_history li  {
-    line-height: 60px;
-    font-size: 2em;
-    font-weight: 800;
-    color: #9a9ca5;
+    .marker  {
+        line-height: 60px;
+        font-size: 2em;
+        font-weight: 800;
+        color: #9a9ca5;
+    } 
 } 
 #develop_history .marker:before {
     position: absolute;
@@ -266,6 +260,26 @@ header .col.c3 .descrs {
     background-image: url("images/page_6/our_history/2.svg");
 }
 
+#our_partners .image_area {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    padding-right: 50px;
+    padding-left: 50px;
+} 
+#our_partners .imag {
+    display: block;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+#our_partners .title_area {
+    margin-bottom: 40px;
+}
+#our_partners .descr {
+    color: #9a9ba0;
+}
+
+ 
 
 
 
