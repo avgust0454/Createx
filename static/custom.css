@@ -163,6 +163,21 @@ h2.title {
         padding: 15px 50px;
         color: #fff;
     }
+    &.s6 {
+        padding: 20px 35px;
+        text-decoration: none;
+        background-color: #fff;
+        color: #ff5a30;
+        font-weight: 400;
+        font-size: 0.8em;
+        border-radius: 3px;
+        border: 1px solid #ff5a30;
+        display: inline-block;
+    }
+    &.s6:hover {
+        color: #fff;
+        background-color: #ff5a30;
+    }
 }
 /*.btn.s3 {
     text-decoration: none;

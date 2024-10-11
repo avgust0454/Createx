@@ -173,6 +173,7 @@ header .col.c3 .descrs {
 
 #mission .container {
     text-align: center;
+    padding-top: 40px;
     .title2 {
         color: var(--ourcorvaldarc);
         font-size: 2.4em;
@@ -259,7 +260,10 @@ header .col.c3 .descrs {
     content: "";
     background-image: url("images/page_6/our_history/2.svg");
 }
-
+#our_partners .container {
+    padding-top: 40px;
+    padding-bottom: 40pxs;
+}
 #our_partners .image_area {
     display: grid;
     grid-template-columns: repeat(6, 2fr);
@@ -274,9 +278,55 @@ header .col.c3 .descrs {
 }
 #our_partners .title_area {
     margin-bottom: 40px;
+    text-align: center;
 }
 #our_partners .descr {
     color: #9a9ba0;
+}
+
+#our_team .container {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+#our_team .wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    text-align: center;
+    .name {
+        color: #424551;
+        font-size: 1em;
+    }
+    .descr {
+        color: #898b90;
+        font-size: 1em;
+    }
+}
+#our_team .title_area {
+  text-align: center;
+  padding-bottom: 40px;
+  .descr {
+    color: #898b90;
+  }
+}
+#our_team .resume {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 10px;
+  .inner {
+    color: var(--graydark);
+    font-size: 1em;
+  }
+  .btnss {
+    color: var(--orangenum);
+    font-size: 1em;
+  }
+}
+
+#map .title {
+    text-align: center;
+    padding-bottom: 30px;
 }
 
  
