@@ -263,17 +263,24 @@ h2.title {
         } 
     }
 }
+
 /* header .col.c3 {
      background-size: cover;
 } */
-.header_1 .col.c3 {
-    height: 900px;
-    background-size: cover;
-    background: url("images/home_page/header/bgr_image/1.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    display: flex;
-    align-items: center;
+.container.c1 .bimgs {
+    width: 1230px;
+    height: 633px;
+    display: block;
+    width: 100%;
+}
+.header_1 .container {
+/*    min-height: 900px;*/
+/*    background-size: cover;*/
+/*    background: url("images/home_page/header/bgr_image/1.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: top center;*/
+    /* display: flex;
+    align-items: center; */
     .wrap {
         width: clamp(320px, 100%, 1230px);
         margin-inline: auto;
@@ -296,6 +303,7 @@ h2.title {
 и от этого они могут сбивать вёрстку */
 /* Высота background для мобильных экранов
  подгоняется адаптивностью */
+
 header .col.c3 {
     background-size: cover;
     .descr {
@@ -319,6 +327,8 @@ header .col.c3 {
         }
     }
 }
+
+
 
 #about .container {
     text-align: center;

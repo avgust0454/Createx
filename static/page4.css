@@ -89,7 +89,6 @@ header .wrap {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
     gap: 15px;
-    padding: 20px;
     .item {
         text-decoration: none;
         display: flex;
@@ -99,17 +98,17 @@ header .wrap {
         gap: 35px;
         padding-top: 30px;
         padding-bottom: 30px;
-        margin-bottom: 50px;
         background-color: #fff;
-    }
-    .item:hover {
-        background-color: #ff5a30;
-        svg {
-            path {
-                fill: #fff;
+        &:hover {
+            background-color: #ff5a30;
+            svg {
+                path {
+                    fill: #fff;
+                }
             }
         }
     }
+   
     .item .title6 {
         color: #1e212c;
     }
@@ -123,16 +122,18 @@ header .wrap {
 
 header {
     position: relative;
-    margin-bottom: 70px;
+    .container {
+        position: relative;
+        height: inherit;
+    }
 }
+
 header .wrap.c2 {
     position: absolute;
-    bottom: 0px;
-    left: 50px;
-    transform: translate(50%, 65%);
-    width: clamp(320px, 100%, 1230px);
-    margin-inline: auto;
-    box-sizing: border-box;
+    bottom: 0;
+    transform: translate(0, 50%);
+    width: 100%;
+    z-index: 1;
 }
 
 #portfolio_4 {

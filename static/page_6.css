@@ -241,24 +241,23 @@ header .col.c3 .descrs {
     }
 }
 #develop_history .wrap .markers {
-    list-style: none;
-    position: relative;
     text-align: left;
     .marker  {
         line-height: 60px;
+        position: relative;
         font-size: 2em;
         font-weight: 800;
         color: #9a9ca5;
     } 
 } 
-#develop_history .marker:before {
+#develop_history .marker::before {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 16px;
-    height: 58px;
+    left: -22px;
+    width: 1px;
+    height: 61px;
     content: "";
-    background-image: url("images/page_6/our_history/2.svg");
+    background-color: #9a9ca5;
 }
 #our_partners .container {
     padding-top: 40px;
