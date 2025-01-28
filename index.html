@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="static/custom.css">
+	<link rel="stylesheet" href="static/slick/slick-theme.css">
+	<link rel="stylesheet" href="static/slick/slick.css">
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 	<title>Createx</title>
 </head>
@@ -33,41 +35,56 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<img class="bimg" src="static/images/home-page/header/bgr-image/1b.png" alt="">
-			<!-- <div class="wrap"> 	
-				<div class="title_area">
-					<span class="title2">CREATE</span>
-					<br>CONSTRUCTION
+	</div>	
+		<div class="slider1">
+			<div class="item">
+				<img class="bimg" src="static/images/home_page/header/bgr_image/1.png" alt="">
+				<div class="content">
+					<div class="title_area">
+						<span class="title2">CREATE</span>
+						<div>CONSTRUCTION</div>
+					</div>
+					<p class="descr">Cras ultrices leo vitae non viverra. 
+						Fringilla nisi quisque <br> consequat, dignissim vitae proin ipsum sed.
+						Pellentesque nec <br> turpis purus eget pellentesque integer ipsum
+						elementum felis. 
+					</p>
+					<div class="btnn_area">
+						<a href="" class="button c1">Learn more about us</a>
+						<a href="" class="btn invert">SUBMIT REQUEST</a>
+					</div>
 				</div>
-				<p class="descr">Cras ultrices leo vitae non viverra. 
-					Fringilla nisi quisque <br> consequat, dignissim vitae proin ipsum sed.
-					Pellentesque nec <br> turpis purus eget pellentesque integer ipsum
-					elementum felis. 
-				</p>
-				<div class="btnn_area">
-					<a href="" class="button c1">Learn more about us</a>
-					<a href="" class="btn invert">SUBMIT REQUEST</a>
+			</div> 
+			<div class="item">
+				<img class="bimg" src="static/images/home_page/header/bgr_image/1.png" alt="">
+				<div class="content">
+					<div class="title_area">
+						<span class="title2">CREATE</span>
+						<div>CONSTRUCTION</div>
+					</div>
+					<p class="descr">Cras ultrices leo vitae non viverra. 
+						Fringilla nisi quisque <br> consequat, dignissim vitae proin ipsum sed.
+						Pellentesque nec <br> turpis purus eget pellentesque integer ipsum
+						elementum felis. 
+					</p>
+					<div class="btnn_area">
+						<a href="" class="button c1">Learn more about us</a>
+						<a href="" class="btn invert">SUBMIT REQUEST</a>
+					</div>
 				</div>
+			</div> 
+			<!-- <div class="item">
+				<img class="bimg" src="static/images/home_page/header/bgr_image/2.png" alt="">
+			</div>
+			<div class="item">
+				<img class="bimg" src="static/images/home_page/header/bgr_image/3.png" alt="">
 			</div> -->
-	</div>
+		</div>	
+	
 </header>
-			
-<div id="about">
-	<div class="container">
-		<h2 class="title s2">We are Createx Construction Bureau</h2>
-		<span class="descr">We are rightfully considered to be the best construction company in the USA.</span>
-		<div class="videoblock">
-			<button class="btnreset videoplay" aria-label="Play video"><svg><use xlink:href="img/sprite.svg#play"></use></svg></button>
-			<video class="videocontent" src="static/about-video.mp4" muted="" loop="" preload="metadata"></video>
-		</div>
-		<!-- Как разместить видео. -->
-	</div>
-</div>
 
 <div id="mission"> 
-	<div class="container">
+	<div class="container c1">
 		<h2 class="title s2">Our core values</h2>
 		<h6 class="title6">Our mission is to set the highest standards for construction sphere.</h6>
 		<div class="features">
@@ -91,25 +108,24 @@
 		
 	<div class="email">
 		<h2 class="title s2">Want to know more? Ask us a question:</h2>
-		<div class="container">
+		<div class="container c2">
 			<form action="" class="knowform">
 				<div class="fieldarea">
-					<label for="names">Name</label>
+					<label for="names" class="label">Name</label>
 				    <input type="text" class="name" name="" id="names" placeholder="Your name">
 				</div>
 			    <div class="fieldarea">
-			    	<label for="phones">Phone</label>
+			    	<label for="phones" class="label">Phone</label>
 				    <input type="text" class="phone" name="" id="phones"  placeholder="Your phone ">
 				</div>
 			    <div class="fieldarea">
-			    	<label for="messages">Message</label>
+			    	<label for="messages" class="label">Message</label>
 				    <input type="text" class="message" name="" id="messages" placeholder="Your message">
 				</div>
 			    <div class="fieldarea">
 			    	<input type="submit" class="btn s2" value="SEND">
 			    </div> 
 			</form>
-			<!-- <a href="" class="btns">SEND</a> -->
 		</div>
 	</div>
 </div>
@@ -335,7 +351,7 @@
 	<div class="explnewpost">
 		<div class="explore">Explore all our news posts</div>
 		<a href="" class="btn invert">VIEW ALL NEWS</a>
-		<!-- TODO 8: Как выставить эти два элемента на одном уровне  -->
+		
 	</div>
 </div>
 
@@ -436,7 +452,7 @@
 </footer>
 
 <script src="static/jquery-3.7.1.min.js"></script>
-<script src="static/slick/slick.js"></script>
+<script src="static/slick/slick.min.js"></script>
 <script src="static/custom1.js"></script>
 </body>
 </html>

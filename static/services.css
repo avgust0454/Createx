@@ -4,9 +4,7 @@
     width: 100%;
     margin: 0 auto;  
 }
-/*body {
-    margin: 0;
-}*/
+
 
 /*БЭМ*/
 #header {
@@ -108,28 +106,10 @@
                color: #898b90;
                font-size: 1em;
                padding-bottom: 30px;
-            }
-            .btn {
-               /* border: 1px solid #ff5a30;
-                padding: 10px 40px;
-                background-color: #fff;
-                margin-top: 50px;
-                text-decoration: none;
-                color: #ff5a30;
-                border-radius: 4px; */
-            }   
+            }  
         }  
     }
 }
-/* #features_2 .btn {
-    border: 1px solid #ff5a30;
-    padding: 10px 40px;
-    background-color: #fff;
-    margin-top: 50px;
-    text-decoration: none;
-    color: #ff5a30;
-    border-radius: 4px;
-} */
 
 #contacts_2 {
     background: url("images/services/quickemail/1.png");
@@ -178,13 +158,6 @@
                 .checkbox {
                     background-color: #ff5a30;
                 }
-               /* .button.c1 {
-                    background-color: #ff5a30;
-                    padding: 10px 20px;
-                    color: #fff;
-                    border: 1px normal #ff5a30;
-                    border-radius: 4px;
-                }*/
             } 
         }  
     }
@@ -265,14 +238,6 @@ footer .col.c2 {
         border-radius: 3px;
         border: 0.7px normal #61636b;
     }
-  /*  .btn {
-        background-color: #ff5a30;
-        padding: 9px 17px;
-        border: 2px solid #ff5a30;
-        color: #fff;
-        font-size: 0.8em;
-        font-weight: normal;
-    }*/
 }
 footer {
     & .col.c1 {

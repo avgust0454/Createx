@@ -56,13 +56,6 @@ header .row.c1 {
 }
 
 header .col.c3 {
- /* height: 600px;
-    background-size: cover;
-    background: url("images/page_4/bgr_image/header4/1.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    display: flex;
-    align-items: center; */
     .wrap_1 {
         width: clamp(320px, 100%, 1230px);
         margin-inline: auto;
@@ -177,7 +170,6 @@ header .wrap.c2 {
     bottom: 0;
     right: 0;
     background-color: #fff;
-/*    height: 40%;*/
 } 
 
 
